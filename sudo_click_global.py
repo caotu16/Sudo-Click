@@ -1,7 +1,7 @@
 """
 SUDO Click Global - Công cụ click với Global Hotkey
 Author: Sudo
-Version: 4.0.0 - Global Hotkey Edition
+Version: 5.0.0 - Perfect Edition
 """
 
 import tkinter as tk
@@ -41,7 +41,7 @@ class SUDOClickGlobal:
         self.setup_global_hotkey()
         
         # In thông tin khởi động
-        print("=== SUDO Click Global v4.0.0 by Sudo ===")
+        print("=== SUDO Click Global v5.0.0 by Sudo ===")
         print("🌍 Global Hotkey - Hoạt động ở mọi ứng dụng!")
         print("🔥 Tính năng:")
         print(f"  - Phím tắt GLOBAL: {self.hotkey.upper()}")
@@ -60,7 +60,7 @@ class SUDOClickGlobal:
     def setup_window(self):
         """Cấu hình cửa sổ chính"""
         self.root.title("SUDO Click")
-        self.root.geometry("220x120")
+        self.root.geometry("300x250")
         self.root.resizable(False, False)
         self.root.configure(bg='#f0f0f0')
         
@@ -103,31 +103,42 @@ class SUDOClickGlobal:
         self.status_text = tk.StringVar()
         self.status_text.set(f"Nhấn {self.hotkey.upper()} để chạy")
         
-        # Main status button
+        # Main status button - TO GẤPE ĐÔI
         self.main_button = tk.Button(
             self.main_frame,
             textvariable=self.status_text,
-            font=('Arial', 9),
+            font=('Arial', 10),
             relief='raised',
             bd=1,
             padx=5,
-            pady=5,
+            pady=12,  # Tăng gấp đôi từ 5 lên 12
             width=22,
             state='disabled',
             bg='white',
             fg='black'
         )
-        self.main_button.pack(pady=(0, 5))
+        self.main_button.pack(pady=(0, 8))
         
-        # Global status label
+        # Global status label - TEXT MỚI DÀI HƠN
         self.global_label = tk.Label(
             self.main_frame,
-            text=f"🌍 Global: {self.hotkey.upper()}",
+            text="Chạy phần mềm này với quyền Administrator,\nđưa chuột vào vị trí cần click và nhấn F9\nđể Chạy hoặc Dừng.",
             font=('Arial', 8),
             bg='#f0f0f0',
-            fg='green'
+            fg='green',
+            justify='center'
         )
-        self.global_label.pack(pady=(0, 5))
+        self.global_label.pack(pady=(0, 8))
+        
+        # Version label - THÊM PHIÊN BẢN
+        self.version_label = tk.Label(
+            self.main_frame,
+            text="Phiên bản 5.0.0",
+            font=('Arial', 7),
+            bg='#f0f0f0',
+            fg='gray'
+        )
+        self.version_label.pack(pady=(0, 8))
         
         # Help button
         self.help_button = tk.Button(
@@ -143,7 +154,33 @@ class SUDOClickGlobal:
             bg='white',
             fg='black'
         )
-        self.help_button.pack()
+        self.help_button.pack(pady=(0, 5))
+        
+        # Exit instruction
+        self.exit_instruction = tk.Label(
+            self.main_frame,
+            text="Nhấn nút Thoát để tắt hẳn phần mềm",
+            font=('Arial', 7),
+            bg='#f0f0f0',
+            fg='red'
+        )
+        self.exit_instruction.pack(pady=(0, 5))
+        
+        # Exit button
+        self.exit_button = tk.Button(
+            self.main_frame,
+            text="Thoát",
+            font=('Arial', 9),
+            relief='raised',
+            bd=1,
+            padx=5,
+            pady=3,
+            width=22,
+            command=self.exit_app,
+            bg='#ffcccc',
+            fg='red'
+        )
+        self.exit_button.pack()
     
     def setup_global_hotkey(self):
         """Đăng ký global hotkey"""
@@ -313,9 +350,25 @@ class SUDOClickGlobal:
         """Mở trang web hỗ trợ"""
         try:
             print("🌐 Mở trang hỗ trợ...")
-            webbrowser.open("https://seodoctor.vn")
+            webbrowser.open("https://nguyencaotu.com")
         except Exception as e:
             print(f"❌ Không thể mở trình duyệt: {e}")
+    
+    def exit_app(self):
+        """Thoát hoàn toàn khỏi ứng dụng"""
+        try:
+            print("👋 Đang thoát SUDO Click...")
+            # Dọn dẹp global hotkey
+            keyboard.unhook_all()
+            # Dừng auto-clicking nếu đang chạy
+            self.is_running = False
+            # Đóng ứng dụng
+            self.root.quit()
+            self.root.destroy()
+        except Exception as e:
+            print(f"❌ Lỗi khi thoát: {e}")
+        finally:
+            sys.exit(0)
     
     def run(self):
         """Chạy ứng dụng"""
