@@ -8,7 +8,7 @@ Sure! Here's a README.md file for your GitHub project, based on the information 
 
 SUDO Click là một phần mềm tự động click chuột được phát triển đặc biệt để hỗ trợ anh em game thủ, nhất là trong tựa game **Ego**. Chúng tôi hiểu rằng việc phải click chuột liên tục vào một vị trí cố định, đặc biệt khi phòng đã đầy, có thể gây khó chịu và mỏi tay.
 
-Phần mềm này ra đời với mục tiêu đơn giản hóa tối đa thao tác click chuột tự động. Với giao diện cực kỳ thân thiện và dễ sử dụng, SUDO Click phù hợp cho mọi đối tượng người dùng, kể cả những anh lớn 7x, 8x không quen với công nghệ phức tạp. Mỗi lần kích hoạt, phần mềm sẽ thực hiện **50 lần click** với độ trễ **0.2 giây** giữa mỗi lần click.
+Phần mềm này ra đời với mục tiêu đơn giản hóa tối đa thao tác click chuột tự động. Với giao diện cực kỳ thân thiện và dễ sử dụng, SUDO Click phù hợp cho mọi đối tượng người dùng, kể cả những anh lớn 7x, 8x không quen với công nghệ phức tạp. Mỗi lần kích hoạt, phần mềm sẽ thực hiện **không giới hạn số lần click** với độ trễ **0.2 giây** giữa mỗi lần click.
 
 ---
 
