@@ -21,7 +21,12 @@ SUDO Click được thiết kế để sử dụng một cách đơn giản nh�
 3.  **Di chuyển chuột**: Đưa con trỏ chuột đến vị trí bạn muốn phần mềm thực hiện click.
 4.  **Bắt đầu/Dừng click**: Nhấn phím **F9** để bắt đầu quá trình click tự động. Nhấn **F9** một lần nữa để dừng.
 
-Mỗi chu kỳ chạy, phần mềm sẽ thực hiện 50 lần click với độ trễ 0.2 giây.
+Mỗi chu kỳ chạy, phần mềm sẽ thực hiện click không giới hạn, lần click với độ trễ mặc định 0.2 giây (bạn có thể tùy chỉnh độ trễ này khi chạy phần mềm)
+
+Các phím tắt bạn nên nhớ:
+- F9 : Để chạy hoặc dừng phần mềm
+- CTRL + SHIFT + S : Để hiện phần mềm nếu nó đang chạy ẩn
+- Nhấn nút Thoát trên phần mềm để tắt hẳn, bạn X thì nó chỉ ẩn đi chứ không tắt hẳn.
 
 ---
 
