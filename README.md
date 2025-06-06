@@ -14,6 +14,8 @@ Phần mềm này ra đời với mục tiêu đơn giản hóa tối đa thao t
 
 ## Cách sử dụng
 
+- Video hướng dẫn: https://www.youtube.com/watch?v=GYo9T7RvJAU
+
 SUDO Click được thiết kế để sử dụng một cách đơn giản nhất:
 
 1.  **Chạy với quyền Administrator**: Click chuột phải vào file `SUDO Click.exe` và chọn **"Run as Administrator"**.
