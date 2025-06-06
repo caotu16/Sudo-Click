@@ -1,7 +1,3 @@
-Sure! Here's a README.md file for your GitHub project, based on the information you provided:
-
----
-
 # SUDO Click - Tự Động Hóa Thao Tác Click Chuột
 
 ## Giới thiệu
