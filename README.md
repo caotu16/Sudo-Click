@@ -1,5 +1,7 @@
 # SUDO Click - Tự Động Hóa Thao Tác Click Chuột
 
+![image](https://github.com/user-attachments/assets/d1fd3a79-1ecf-4367-ad67-27356dacdb1a)
+
 ## Giới thiệu
 
 SUDO Click là một phần mềm tự động click chuột được phát triển đặc biệt để hỗ trợ anh em game thủ, nhất là trong tựa game **Ego**. Chúng tôi hiểu rằng việc phải click chuột liên tục vào một vị trí cố định, đặc biệt khi phòng đã đầy, có thể gây khó chịu và mỏi tay.
